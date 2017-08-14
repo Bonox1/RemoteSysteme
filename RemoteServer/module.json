@@ -1,0 +1,14 @@
+{
+	"id": "{BDB53467-B1BF-4A57-A62E-604617337498}",
+	"name": "RemoteSystem",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"RemoteSystem"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "RIS"
+}

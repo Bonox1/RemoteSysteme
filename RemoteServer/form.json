@@ -1,0 +1,10 @@
+{
+	"elements":
+	[
+		{ "name": "Username", "type": "ValidationTextBox", "caption": "IPS-Username" },
+		{ "name": "Password", "type": "PasswordTextBox", "caption": "IPS-Password" },
+		{ "type": "IntervalBox", "name": "WatchdogInterval", "caption": "Sekunden" },
+		{ "name": "MIoRS", "type": "ValidationTextBox", "caption": "My Id on remote System" },
+		{ "type": "CheckBox", "name": "Wartung", "caption": "Wartung" }
+	]
+}
