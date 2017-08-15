@@ -1,5 +1,4 @@
 <?
-
 class BonoxModulesTools extends IPSModule {
 	protected $debugOn;
 
