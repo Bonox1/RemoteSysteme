@@ -161,12 +161,12 @@ class RemoteSystem extends IPSModule {
 	}
 
 	public function isActive() {
-		return $this->GetValue(GetIDForIdent('Alive_Flag'));
+		return GetValue($this->GetIDForIdent('Alive_Flag'));
 	}
 
 	public function openRpc($noTest=false) {
 		if ($noTest or $this->isActive()) {
-			$ip=$this->GetValue(GetIDForIdent("IP"));
+			$ip=GetValue($this->GetIDForIdent("IP"));
 			$username=$this->ReadPropertyString("Username");
 			$pswd=$this->ReadPropertyString("Password");
 			$rpc=new JSONRPC("$username:$pswd@$ip:3777/api/");
