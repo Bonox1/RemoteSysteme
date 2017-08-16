@@ -56,7 +56,7 @@ function starteOn($sId,$name) {
 	$srv->starteTask($name);
 }
 
-class RemoteServer extends IPSModule {
+class RemoteSystem extends IPSModule {
 	protected $idSelf;
 	protected $serverName;
 	protected $serverIp;
