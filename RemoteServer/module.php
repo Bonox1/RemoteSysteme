@@ -67,7 +67,7 @@ class RemoteServer extends IPSModule {
 	protected $myIdRemote;
 	protected $rpc;
 	
-	
+
 	public function __construct($InstanceID)
 	{
 		//Never delete this line!
@@ -365,7 +365,7 @@ class RemoteServer extends IPSModule {
 		socket_close($socket);
 		//echo "OK.\n\n";
 	}
-	require_once(__DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "BonoxModulesTools.php");
+// 	require_once(__DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "BonoxModulesTools.php");
 }
 
 ?>
