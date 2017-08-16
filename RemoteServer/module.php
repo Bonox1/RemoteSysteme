@@ -73,7 +73,7 @@ class RemoteSystem extends IPSModule {
 		//Never delete this line!
 		parent::__construct($InstanceID);
 		$this->idSelf=$InstanceID;
-		$this->rpc=$this->openRpc();
+//		$this->rpc=$this->openRpc();
 	}
 	
 	public function Create()
@@ -97,7 +97,7 @@ class RemoteSystem extends IPSModule {
 		$this->RegisterVariableString("Name", "Name","",0);
 		$this->RegisterVariableString("Betriebssystem", "Betriebssystem","",1);
 		$this->RegisterVariableString("IP", "IP","",2);
-		$this->RegisterVariableBoolean("Alive_Flag", "Alive_Flag","Alive",3);
+		$this->RegisterVariableBoolean("Alive_Flag", "Alive Flag","Alive",3);
 		$this->RegisterVariableBoolean("Stoerung", "Störung","Alarm",4);
 		$this->RegisterVariableInteger("Startzeit", "Startzeit","~UnixTimestamp",5);
 		$this->RegisterVariableInteger("Laufzeit", "Laufzeit","Stunden",6);
@@ -109,13 +109,7 @@ class RemoteSystem extends IPSModule {
 	
 	}
 	
-	/**
-	 * This function will be available automatically after the module is imported with the module control.
-	 * Using the custom prefix this function will be callable from PHP and JSON-RPC through:
-	 *
-	 * UWZ_RequestInfo($id);
-	 *
-	 */
+
 // 	public function __construct($sId) {
 // 		parent::__construct();
 // // 		$this->setDebug(true);
@@ -179,6 +173,7 @@ class RemoteSystem extends IPSModule {
 		return $this->mediaplayer;
 	}
 	public function testAlive() {
+		$this->rpc=$this->openRpc();
 		if (!isset($_IPS)) global $_IPS;
 		$sender=@$_IPS['SENDER'];
 // 		print_r ("Sender=".$sender."\n");
