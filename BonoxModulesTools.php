@@ -1,12 +1,12 @@
 <?
-class BonoxModulesTools extends IPSModule {
-	protected $debugOn;
+// class BonoxModulesTools extends IPSModule {
+// 	protected $debugOn;
 
-	public function __construct($InstanceID)
-	{
-		//Never delete this line!
-		parent::__construct($InstanceID);
-	}
+// 	public function __construct($InstanceID)
+// 	{
+// 		//Never delete this line!
+// 		parent::__construct($InstanceID);
+// 	}
 
 	protected function getIdSelf() {
 		return $this->idSelf;
@@ -287,6 +287,6 @@ class BonoxModulesTools extends IPSModule {
 	public function getDatumZeit($ts) {
 		return date("d.m.Y H:m:s",$ts);
 	}
-}
+// }
 
 ?>
